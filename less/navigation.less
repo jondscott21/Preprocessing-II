@@ -1,1 +1,38 @@
 // Navigation Styles here
+nav {
+    margin: 0 auto;
+    padding-bottom: 23px;
+    max-width: 1000px;
+    .flexing(space-around, center);
+    border-bottom: 2px dashed @navigation-border;
+
+    @media @mobile {
+        max-width: 98vw;
+        flex-direction: column;
+        padding-bottom: 5px;
+    }
+    
+    .nav-anchors {
+        @media @mobile {
+            margin-top: 15px;
+        }
+    }
+    a {
+        padding-right: 30px;
+        font-size: 1.6rem;
+        color: black;
+        text-decoration: none;
+
+        @media @mobile {
+            justify-content: space-between;
+            padding-right: 15vw;
+        }
+        
+    }
+    a:last-child {
+        @media @mobile {
+            padding-right: 0;
+        }
+        
+    }
+}

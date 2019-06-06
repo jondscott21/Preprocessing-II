@@ -1,1 +1,14 @@
 // Mixins in here
+.flexing (@j, @a) {
+    display: flex;
+    justify-content: @j;
+    align-items: @a;
+}
+.missing-buttons(@pad, @wid, @fnt-size, @col, @back-col, @round) {
+    padding: @pad;
+    width: @wid;
+    font-size: @fnt-size;
+    color: @col;
+    background-color: @back-col;
+    border-radius: @round;
+}
